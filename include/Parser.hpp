@@ -5,23 +5,27 @@
 #include <string>
 #include <vector>
 
-enum KeyValuePair {
+enum KeyValuePair
+{
   KEY = 0,
   VALUE = 1
 };
 
-enum StatusCode {
+enum StatusCode
+{
   BAD_REQUEST_400 = 400,
 };
 
-enum ValidationStatus {
+enum ValidationStatus
+{
   READY,
   ON_HEADER,
   ON_BODY,
   COMPLETE
 };
 
-struct RequestPool {
+struct RequestPool
+{
   char* total_line;
   size_t line_len;
   size_t prev_offset;
@@ -30,7 +34,8 @@ struct RequestPool {
 
 // TODO: char* 자료형에서 string 으로 변환할 때 '0' 을 null character 로
 // 인식하는지 확인 필요
-struct Request {
+struct Request
+{
   std::string method;
   std::string uri;
   std::string http_version;
@@ -40,7 +45,8 @@ struct Request {
   StatusCode status;
 };
 
-class Parser {
+class Parser
+{
  public:
   // Canonical Form
   Parser(void);
