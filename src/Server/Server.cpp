@@ -130,6 +130,8 @@ Server::Server(Config server_conf)
           //  parse section
           //
           Parser paser;
+          // ResponseMaker repos(parser.getRequest);
+          // message = repose.makeResponseMessage;
           //
           //  send to HTTP Message section ;
           //
