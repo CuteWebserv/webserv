@@ -4,7 +4,6 @@
 #include <algorithm>
 #include <cctype>
 #include <cstring>
-#include <iostream>
 #include <map>
 #include <sstream>
 #include <string>
@@ -25,10 +24,5 @@ std::string ft_strtrim(const std::string &str);
 std::vector<std::string> ft_split(const std::string &str, char delimiter,
                                   int count);
 std::string ft_toLower(const std::string &str);
-
-int ft_error(int status_code);
-int ft_error(int status_code, const char *error_message);
-void ft_error_exit(int exit_flag, const char *error_message);
-void ft_process_print(const char *str);
 
 #endif
